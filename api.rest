@@ -16,7 +16,7 @@ PUT http://localhost:3000/user
 Content-Type: application/json
 
 {
-  "id": "1",
+  "id": "5",
   "username": "updateduser",
   "password": "newsecurepassword",
   "cardId": "12345633"
