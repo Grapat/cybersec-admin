@@ -7,17 +7,25 @@ Content-Type: application/json
 
 {
   "username": "testuser",
-  "password": "securepassword"
+  "password": "securepassword",
+  "cardId": "123456"
 }
 
 ### Update user
-PUT http://localhost:3000/user/1
+PUT http://localhost:3000/user
 Content-Type: application/json
 
 {
+  "id": "1",
   "username": "updateduser",
-  "password": "newsecurepassword"
+  "password": "newsecurepassword",
+  "cardId": "12345633"
 }
 
-### 6️⃣ Delete a user
-DELETE http://localhost:3000/user/5
+### Delete a user
+DELETE http://localhost:3000/user
+Content-Type: application/json
+
+{
+  "id": "3"
+}
